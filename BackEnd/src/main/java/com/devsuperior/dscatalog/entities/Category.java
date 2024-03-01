@@ -1,5 +1,6 @@
 package com.devsuperior.dscatalog.entities;
 
+import com.devsuperior.dscatalog.dto.CategoryDTO;
 import jakarta.persistence.*;
 
 import java.io.Serial;

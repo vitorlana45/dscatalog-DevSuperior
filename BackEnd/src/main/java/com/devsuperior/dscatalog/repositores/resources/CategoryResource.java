@@ -1,13 +1,12 @@
-package com.devsuperior.dscatalog.resources;
+package com.devsuperior.dscatalog.repositores.resources;
 
-import com.devsuperior.dscatalog.dto.CategoryDTO;
-import com.devsuperior.dscatalog.services.CategoryService;
+import com.devsuperior.dscatalog.repositores.dto.CategoryDTO;
+import com.devsuperior.dscatalog.repositores.services.CategoryService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;

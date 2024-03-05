@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.services.exceptions;
+package com.devsuperior.dscatalog.repositores.services.exceptions;
 
 import java.io.Serial;
 

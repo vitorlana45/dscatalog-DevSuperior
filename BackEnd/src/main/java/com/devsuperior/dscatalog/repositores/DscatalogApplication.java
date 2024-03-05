@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog;
+package com.devsuperior.dscatalog.repositores;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

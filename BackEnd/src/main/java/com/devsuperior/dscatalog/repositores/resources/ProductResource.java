@@ -1,7 +1,7 @@
-package com.devsuperior.dscatalog.resources;
+package com.devsuperior.dscatalog.repositores.resources;
 
-import com.devsuperior.dscatalog.dto.ProductDTO;
-import com.devsuperior.dscatalog.services.ProductService;
+import com.devsuperior.dscatalog.repositores.dto.ProductDTO;
+import com.devsuperior.dscatalog.repositores.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

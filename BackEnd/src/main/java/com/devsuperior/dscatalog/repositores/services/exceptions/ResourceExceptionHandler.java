@@ -1,6 +1,6 @@
-package com.devsuperior.dscatalog.services.exceptions;
+package com.devsuperior.dscatalog.repositores.services.exceptions;
 
-import com.devsuperior.dscatalog.resources.exceptions.StandardError;
+import com.devsuperior.dscatalog.repositores.resources.exceptions.StandardError;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.entities;
+package com.devsuperior.dscatalog.repositores.entities;
 
 import jakarta.persistence.*;
 

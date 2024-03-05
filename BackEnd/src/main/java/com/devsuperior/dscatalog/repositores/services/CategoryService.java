@@ -1,15 +1,14 @@
-package com.devsuperior.dscatalog.services;
+package com.devsuperior.dscatalog.repositores.services;
 
-import com.devsuperior.dscatalog.dto.CategoryDTO;
-import com.devsuperior.dscatalog.entities.Category;
-import com.devsuperior.dscatalog.repositories.CategoryRepository;
-import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
+import com.devsuperior.dscatalog.repositores.dto.CategoryDTO;
+import com.devsuperior.dscatalog.repositores.entities.Category;
+import com.devsuperior.dscatalog.repositores.repositories.CategoryRepository;
+import com.devsuperior.dscatalog.repositores.services.exceptions.DatabaseException;
+import com.devsuperior.dscatalog.repositores.services.exceptions.ResourceNotFoundException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

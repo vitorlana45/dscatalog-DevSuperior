@@ -6,6 +6,7 @@ import com.devsuperior.dscatalog.repositores.entities.Product;
 
 import java.time.Instant;
 
+
 public class Factory {
 
     public static Product createProduct() {

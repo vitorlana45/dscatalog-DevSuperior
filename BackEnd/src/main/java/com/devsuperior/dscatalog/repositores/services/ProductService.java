@@ -49,7 +49,7 @@ public class ProductService {
         return new ProductDTO(entity);
     }
 
-    @Transactional
+@Transactional
     public ProductDTO update(Long id, ProductDTO dto) {
         try {
             Product entity = productRepository.getReferenceById(id);

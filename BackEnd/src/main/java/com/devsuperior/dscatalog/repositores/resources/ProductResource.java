@@ -16,36 +16,36 @@ import java.net.URI;
 public class ProductResource {
 
     @Autowired
-    private ProductService ProductService;
+    private ProductService productService;
 
     @GetMapping
     public ResponseEntity<Page<ProductDTO>> findAll(Pageable pageable) {
-        Page<ProductDTO> list = ProductService.findAllPaged(pageable);
+        Page<ProductDTO> list = productService.findAllPaged(pageable);
         return ResponseEntity.ok().body(list);
     }
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<ProductDTO> findById(@PathVariable Long id) {
-        ProductDTO cat = ProductService.findById(id);
+        ProductDTO cat = productService.findById(id);
         return ResponseEntity.ok().body(cat);
     }
 
     @PostMapping
     public ResponseEntity<ProductDTO> insert(@RequestBody ProductDTO dto) {
-        dto = ProductService.insert(dto);
+        dto = productService.insert(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(dto);
     }
 
     @PutMapping(value = "{id}")
     public ResponseEntity<ProductDTO> update(@PathVariable long id, @RequestBody ProductDTO entity) {
-        ProductService.update(id, entity);
+        productService.update(id, entity);
         return ResponseEntity.noContent().build();
     }
 
     @DeleteMapping(value = "{id}")
     public ResponseEntity<ProductDTO> delete(@PathVariable long id) {
-        ProductService.deleteById(id);
+        productService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
 }

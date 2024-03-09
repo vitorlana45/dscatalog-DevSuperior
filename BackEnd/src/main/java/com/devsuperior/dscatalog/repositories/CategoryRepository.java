@@ -1,6 +1,6 @@
-package com.devsuperior.dscatalog.repositores.repositories;
+package com.devsuperior.dscatalog.repositories;
 
-import com.devsuperior.dscatalog.repositores.entities.Category;
+import com.devsuperior.dscatalog.entities.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CategoryRepository extends JpaRepository<Category, Long> {

@@ -1,6 +1,6 @@
-package com.devsuperior.dscatalog.repositores.dto;
+package com.devsuperior.dscatalog.dto;
 
-import com.devsuperior.dscatalog.repositores.entities.Category;
+import com.devsuperior.dscatalog.entities.Category;
 
 import java.io.Serial;
 import java.io.Serializable;

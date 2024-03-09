@@ -1,13 +1,12 @@
 
 package com.devsuperior.dscatalog.resources;
 
-import com.devsuperior.dscatalog.repositores.DscatalogApplication;
-import com.devsuperior.dscatalog.repositores.dto.ProductDTO;
-import com.devsuperior.dscatalog.repositores.entities.Category;
-import com.devsuperior.dscatalog.repositores.services.ProductService;
-import com.devsuperior.dscatalog.repositores.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.repositores.services.exceptions.ResourceNotFoundException;
-import com.devsuperior.dscatalog.repositores.tests.Factory;
+import com.devsuperior.dscatalog.DscatalogApplication;
+import com.devsuperior.dscatalog.dto.ProductDTO;
+import com.devsuperior.dscatalog.services.ProductService;
+import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
+import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
+import com.devsuperior.dscatalog.tests.Factory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,7 +19,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
-import java.time.Instant;
 import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;

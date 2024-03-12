@@ -35,6 +35,4 @@ public class ResourceExceptionHandler {
         err.setPath(request.getRequestURI());
         return ResponseEntity.status(status.value()).body(err);
     }
-
-
 }

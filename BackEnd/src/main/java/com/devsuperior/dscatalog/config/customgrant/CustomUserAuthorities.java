@@ -1,8 +1,8 @@
 package com.devsuperior.dscatalog.config.customgrant;
 
-import java.util.Collection;
-
 import org.springframework.security.core.GrantedAuthority;
+
+import java.util.Collection;
 
 public class CustomUserAuthorities {
 

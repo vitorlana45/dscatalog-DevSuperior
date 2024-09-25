@@ -7,7 +7,6 @@ import com.devsuperior.dscatalog.entities.User;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import org.springframework.http.converter.json.GsonBuilderUtils;
 
 public class UserDTO {
 
